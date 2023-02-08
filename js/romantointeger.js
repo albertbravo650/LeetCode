@@ -4,6 +4,7 @@ function romanToInt(str) {
     console.log(array1);
     // loop through string array
     for(var i=0; i<array1.length; i++) {
+        // conditions for each symbol
         if(array1[i]==="I"){
             int1++;
         } else if(array1[i]==="V"){
