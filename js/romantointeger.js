@@ -6,7 +6,15 @@ function romanToInt(str) {
     for(var i=0; i<array1.length; i++) {
         // conditions for each symbol
         if(array1[i]==="I"){
-            int1++;
+            if(array1[i+1]==="V") {
+                int1+=4;
+                i+=1;
+            } else if(array1[i+1]==="X") {
+                int1+=9;
+                i+=1;
+            } else {
+                int1++;
+            }
         } else if(array1[i]==="V"){
             int1+=5;
         } else if(array1[i]==="X"){
