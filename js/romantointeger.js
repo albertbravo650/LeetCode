@@ -1,5 +1,6 @@
 function romanToInt(str) {
     let int1 = 0;
+    // split string into an array
     array1 = str.split("");
     console.log(array1);
     // loop through string array
