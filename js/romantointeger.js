@@ -19,11 +19,27 @@ function romanToInt(str) {
         } else if(array1[i]==="V"){
             int1+=5;
         } else if(array1[i]==="X"){
-            int1+=10;
+            if(array1[i+1]==="L") {
+                int1+=40;
+                i+=1;
+            } else if(array1[i+1]==="C") {
+                int1+=90;
+                i+=1;
+            } else {
+                int1+=10;
+            }
         } else if(array1[i]==="L"){
             int1+=50;
         } else if(array1[i]==="C"){
-            int1+=100;
+            if(array1[i+1]==="D") {
+                int1+=400;
+                i+=1;
+            } else if(array1[i+1]==="M") {
+                int1+=900;
+                i+=1;
+            } else {
+                int1+=100;
+            }
         } else if(array1[i]==="D"){
             int1+=500;
         } else{
