@@ -4,6 +4,7 @@ function longestCommonPrefix(strs) {
     for(i=0; i<strs.length; i++) {
         console.log(strs[i])
     }
+    // return the longest common prefix
     return lgc;
 }
 
