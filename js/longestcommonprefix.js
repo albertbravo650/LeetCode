@@ -1,18 +1,19 @@
 function longestCommonPrefix(strs) {
-    let lgc = "";
     let firstStr = strs[0];
-    // loop through the arrray of strings
-    for(i=1; i<strs.length; i++) {
-        // console.log(strs[i]);
-        if(!strs[i].startsWith(firstStr)) {
-            firstStr = firstStr.slice(0, -1);
-        } else {
-            i++;
+    // loop through the first string
+    for(let i=0; i<firstStr.length; i++) {
+        // loop through the other strings
+        for(let j=1; j<strs.length; j++) {
+            if(firstStr[i]!==strs[j][i]) {
+                firstStr = firstStr.slice(0, i);
+            }
         }
     }
     // return the longest common prefix
     console.log(firstStr);
-    return lgc;
+    return firstStr;
 }
 
 longestCommonPrefix(["flower", "flow", "flight"]);
+longestCommonPrefix(["dog","racecar","car"]);
+longestCommonPrefix(["dog","dogracecar","dcar"]);
