@@ -1,6 +1,6 @@
 // nums is sorted in a non-decreasing order
 function removeDuplicates(nums) {
-    let k = 0;
+    // let k = 0;
     // console.log(k);
     // let j = nums[0];
     if(nums.length>1) {
@@ -18,11 +18,11 @@ function removeDuplicates(nums) {
                 nums.pop();
             }
         }
-        console.log(nums);
+        // console.log(nums);
         return nums.length;
     }
     else {
-        console.log(nums);
+        // console.log(nums);
         return nums;
     }
 }
