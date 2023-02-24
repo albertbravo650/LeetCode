@@ -10,6 +10,19 @@ function removeElement(nums, val) {
     return nums.length;
 }
 
+// var removeElement = function(nums, val) {
+//     var zeroStartIdx = 0;
+//     for(let i=0;i<nums.length;i++){
+//         if(nums[i]!==val){
+//             nums[zeroStartIdx]=nums[i];
+//             zeroStartIdx++
+//         }
+//     }
+//     console.log(nums);
+//     console.log(zeroStartIdx);
+//     return zeroStartIdx; 
+// };
+
 var nums1 = [3,2,2,3], val1 = 3;
 var k1 = removeElement(nums1, val1);
 
