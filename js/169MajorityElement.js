@@ -15,7 +15,6 @@ var majorityElement = function(nums) {
         comp = temp;
         element = nums[i-1];
       }
-      // notes
     }
     else {
       temp = 0;
