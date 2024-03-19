@@ -14,6 +14,7 @@ var rotate = function(nums, k) {
         nums[j+1] = nums[j];
         nums[j] = temp;
       }
+      console.log(nums);
     }
   }
   return nums;
