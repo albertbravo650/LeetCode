@@ -17,6 +17,7 @@ var rotate = function(nums, k) {
       // console.log(nums);
     }
   }
+  console.log(nums);
   return nums;
 };
 
