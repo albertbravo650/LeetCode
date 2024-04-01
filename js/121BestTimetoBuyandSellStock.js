@@ -12,7 +12,6 @@ var maxProfit = function (prices) {
       maxP = prices[i] - minimum;
     }
   }
-  // console.log(maxP)
   return maxP;
 };
 
