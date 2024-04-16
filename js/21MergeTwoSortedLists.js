@@ -11,7 +11,7 @@
  * @return {ListNode}
  */
 var mergeTwoLists = function(list1, list2) {
-    
+    console.log(list);
 };
 
 var list1 = [1,2,4], list2 = [1,3,4];
